@@ -1,0 +1,1 @@
+lvs {/openlane/designs/core/runs/core/results/signoff/core.spice core} {/openlane/designs/core/runs/core/tmp/signoff/38-core.pnl.v core} /Business/EDA_wx_company/jli/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/core/runs/core/logs/signoff/41-core.lef.lvs.log -json

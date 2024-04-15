@@ -1,0 +1,76 @@
+%Warning-VARHIDDEN: /openlane/designs/core/src/core.v:2893:9: Declaration of signal hides declaration in upper scope: 'hazard'
+ 2893 |   wire  hazard = io_memread & (io_use_rs1 & io_id_rs1 == io_ex_rd | io_use_rs2 & io_id_rs2 == io_ex_rd);  
+      |         ^~~~~~
+                    /openlane/designs/core/src/core.v:3345:10: ... Location of original declaration
+ 3345 |   Hazard hazard (  
+      |          ^~~~~~
+                    ... For warning description see https://verilator.org/warn/VARHIDDEN?v=5.018
+                    ... Use "/* verilator lint_off VARHIDDEN */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:3064:14: Bits of signal are not used: 'memory_io_ecause_out'[3]
+                                                                : ... note: In instance 'core'
+ 3064 |   wire [3:0] memory_io_ecause_out;  
+      |              ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:1797:15: Bits of signal are not used: '_GEN_22'[31:3]
+                                                                : ... note: In instance 'core.execute'
+ 1797 |   wire [31:0] _GEN_22 = reset ? 32'h0 : _GEN_20;  
+      |               ^~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:3:17: Bits of signal are not used: 'io_pc'[1:0]
+                                                             : ... note: In instance 'core.fetch.bht'
+    3 |   input  [31:0] io_pc,
+      |                 ^~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:4:17: Bits of signal are not used: 'io_mem_pc'[1:0]
+                                                             : ... note: In instance 'core.fetch.bht'
+    4 |   input  [31:0] io_mem_pc,
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:17:9: Signal is not used: 'bhtTable_tag_bhtEntry_en'
+                                                             : ... note: In instance 'core.fetch.bht'
+   17 |   wire  bhtTable_tag_bhtEntry_en;  
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:25:9: Signal is not used: 'bhtTable_valid_bhtEntry_en'
+                                                             : ... note: In instance 'core.fetch.bht'
+   25 |   wire  bhtTable_valid_bhtEntry_en;  
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:33:9: Signal is not used: 'bhtTable_target_pc_bhtEntry_en'
+                                                             : ... note: In instance 'core.fetch.bht'
+   33 |   wire  bhtTable_target_pc_bhtEntry_en;  
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:130:17: Bits of signal are not used: 'io_pc'[31:6,1:0]
+                                                               : ... note: In instance 'core.fetch.btb'
+  130 |   input  [31:0] io_pc,
+      |                 ^~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:131:17: Bits of signal are not used: 'io_mem_pc'[31:6,1:0]
+                                                               : ... note: In instance 'core.fetch.btb'
+  131 |   input  [31:0] io_mem_pc,
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:140:9: Signal is not used: 'btbTable_btbEntry_en'
+                                                              : ... note: In instance 'core.fetch.btb'
+  140 |   wire  btbTable_btbEntry_en;  
+      |         ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:142:14: Bits of signal are not used: 'btbTable_btbEntry_data'[0]
+                                                               : ... note: In instance 'core.fetch.btb'
+  142 |   wire [1:0] btbTable_btbEntry_data;  
+      |              ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:143:9: Signal is not used: 'btbTable_MPORT_en'
+                                                              : ... note: In instance 'core.fetch.btb'
+  143 |   wire  btbTable_MPORT_en;  
+      |         ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:146:9: Signal is not used: 'btbTable_MPORT_1_en'
+                                                              : ... note: In instance 'core.fetch.btb'
+  146 |   wire  btbTable_MPORT_1_en;  
+      |         ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:149:9: Signal is not used: 'btbTable_MPORT_3_en'
+                                                              : ... note: In instance 'core.fetch.btb'
+  149 |   wire  btbTable_MPORT_3_en;  
+      |         ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:152:9: Signal is not used: 'btbTable_MPORT_4_en'
+                                                              : ... note: In instance 'core.fetch.btb'
+  152 |   wire  btbTable_MPORT_4_en;  
+      |         ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:1638:15: Bits of signal are not used: '_io_alu_result_T_19'[62:32]
+                                                                : ... note: In instance 'core.execute.alu'
+ 1638 |   wire [62:0] _io_alu_result_T_19 = 4'h9 == io_aluop ? {{62'd0}, sltu_result} : _io_alu_result_T_17;  
+      |               ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/core/src/core.v:2112:17: Bits of signal are not used: 'io_mem_aluresult'[31:1]
+                                                                : ... note: In instance 'core.memory.branch'
+ 2112 |   input  [31:0] io_mem_aluresult,
+      |                 ^~~~~~~~~~~~~~~~
